@@ -1,20 +1,48 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      acceuil
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-text>
+    <h1>Bienvenue.
+    </h1>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p>Commencez par vous connectez<br>à votre compte</p>
+  </ion-text>
+  <div class="actions">
+    <div class="login-buttons">
+      <ion-button>
+        <ion-avatar>
+          <img src="../assets/images/f.png">
+        </ion-avatar>
+        <ion-label>Facebook</ion-label>
+      </ion-button>
+
+      <ion-button>
+        <ion-avatar>
+          <img src="../assets/images/g.jpg">
+        </ion-avatar>
+        <ion-label>Google</ion-label>
+      </ion-button>
+    </div>
+    <div class="separator">
+      <span>or</span>
+      <span class="line left"></span>
+      <span class="line right"></span>
+    </div>
+    
+    <ion-button class="signup-btn" expand="block">
+     
+      Email
+    </ion-button>
+  
+    <p class="login">Utilisateur existant ?<a>Se connecter</a></p>
   </div>
 </ion-content>

@@ -1,3 +1,53 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu  ion-button menuClose menuId="main-menu" contentId="main">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="../assets/images/logo.png" alt="">
+        <ion-label>
+          <h2>Never lost paper</h2>
+          <p>Gestion des annonces</p>
+        </ion-label>
+      </div>
+     <!-- <div class="action-button">
+        <ion-button>
+          <ion-icon slot="start" name="add"></ion-icon>Add Branch
+        </ion-button>
+      </div>-->
+
+      <ion-list lines="none" class="menu-items">
+
+        <ion-item>
+          <ion-icon name="pie-chart-outline"></ion-icon>Acceuil
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="browsers-outline"></ion-icon>Ajouter Annonce
+        </ion-item>
+
+        <ion-item class="active">
+          <ion-icon name="flash"></ion-icon>Liste Annonce
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>Rechercher Annonce
+        </ion-item>
+
+        <ion-item routerLink="/signup">
+          <ion-icon name="heart-outline"></ion-icon>Creer compte
+        </ion-item>
+
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" ></ion-icon>Connexion
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="logo-twitter"></ion-icon>Livraison
+        </ion-item>
+
+      </ion-list>
+
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
