@@ -55,7 +55,8 @@ ion-content{
     margin:8px auto 10px;
     font-size: 12px;
     position: relative;
-    line{
+    
+    .line{
       position: absolute;
       border-top: 1px solid #dfdfdf;
       width: 50px;
@@ -64,10 +65,20 @@ ion-content{
     .right{
       right:98px;
     }
-    left{
+    .left{
       left:98x;
     }
   }
   .signup-btn{
-  //  --background:linear-gradient()
+    --background:linear-gradient(90deg,#3880ff 0%, #3880ff 100%);
+  }
+  .login{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 16px;
+  }
+  .a{
+    color:#7590d6;
+    font-weight: 400;
+    margin-left:5px ;
   }
