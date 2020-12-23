@@ -1,0 +1,87 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button >
+        <ion-back-button></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Annoncer</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+  <ion-tabs>
+    <ion-tab-bar>
+      <ion-tab-button tab= "account"  routerLink="/trouve">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Objets trouvés</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab= "account"  routerLink="/perdu">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Objets perdus</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab= "account" routerLink="/bureau" >
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Bureau des objets</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+  <br>
+</div>
+  <ion-searchbar showCancelButton="never"></ion-searchbar>
+  
+ <!-- <ion-text>
+    <h3>Declarer un objet perdu, volé ou retrouvez le propriétaire d'un objet trouvé.
+    </h3>
+
+    <p>Publiez une annonce en quelques minutes et retrouvez votre objet perdu ou volé<br>(clés, téléphone, documents...)<br>
+    ou le propriétaire d'un objet trouvé.</p>
+  </ion-text>-->
+  <div class="row">
+    <div class="col">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            J'ai perdu un objet
+          </ion-card-title>
+          <ion-card-content>
+            <img src="../assets/images/logo.png" alt="">
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+    </div>
+    <div class="col">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            J'ai touvé un objet
+          </ion-card-title>
+          <ion-card-content>
+            <img src="../assets/images/logo.png" alt="">
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+    </div>
+    <div class="col">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Je recherche un objet
+          </ion-card-title>
+          <ion-card-content>
+            <img src="../assets/images/logo.png" alt="">
+           
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

@@ -1,5 +1,8 @@
 *{
     font-family: lato;
+    --background: #ad5389;  /* fallback for old browsers */
+    --background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+   --background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .menu-header-bg{
     height: 180px;
@@ -66,6 +69,7 @@ p{
     ion-item{
         margin-right: 20px;
         margin-bottom: 10px;
+        color:ivory;
     }
     .active{
         border-left: 5px solid;

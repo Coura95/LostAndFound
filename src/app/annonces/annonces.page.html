@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-back-button></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>annonces</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding="true">
+
+ <ion-list class="list" ng-repeat="i in nombre | filter:motcle">
+<div class="row" style="height: 100%; margin-left: 60px; align-items: center; justify-content: center;">
+  <div class="col">
+    <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Annonce 1
+          </ion-card-title>
+          <ion-card-content>
+            <img src="../assets/images/logo.png" alt="">
+            <ion-buttons>
+              <span class="badge badge-danger" style="background-color:  #ef473a !important;color: white;">More</span>
+            <ion-button>Information</ion-button>
+          </ion-buttons>
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+    </div>
+
+    <div class="col">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Annonce 2
+          </ion-card-title>
+          <ion-card-content>
+            <img src="../assets/images/logo.png" alt="">
+            <ion-buttons>
+              <span class="badge badge-danger" style="background-color:  #ef473a !important;color: white;">More</span>
+            <ion-button>Information</ion-button>
+          </ion-buttons>
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+    </div>
+    <div class="col">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Annonce 3
+          </ion-card-title>
+          <ion-card-content>
+            <img src="../assets/images/logo.png" alt="">
+            <ion-buttons>
+              <span class="badge badge-danger" style="background-color:  #ef473a !important;color: white;">More</span>
+            <ion-button>Information</ion-button>
+          </ion-buttons>
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+    </div>
+    </div>
+ </ion-list>
+
+
+</ion-content>
+<ion-footer style="color: primary;"  >
+  <ion-toolbar>
+    <a href="http://copyright.be" target="_blank">Copyright © - Tous droits réservés</a>
+    <ion-title>Copyright © - Tous droits réservés, Lost&Found</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
  
-  <ion-toolbar color="primary">
+  <ion-toolbar color="pink">
     <ion-title>
       Acceuil
     </ion-title>
@@ -11,6 +11,57 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
+  <ion-slides pager="true">
+    <ion-slide>
+      <h3>welcome</h3>
+      <img class= "images" src="../assets/images/logo.png" alt="">
+      
+      <!--<ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            welcome
+          </ion-card-title>
+          <ion-card-content>
+            <img src="../assets/images/logo.png" alt="">
+            <ion-buttons>
+            <ion-button>Info annonce</ion-button>
+          </ion-buttons>
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>-->
+
+    </ion-slide>
+
+    <ion-slide>
+      <h3>welcome</h3>
+      <img class= "images" src="../assets/images/logo.png" alt="">
+    </ion-slide>
+
+    <ion-slide>
+      <h3>welcome</h3>
+      <img class= "images" src="../assets/images/logo.png" alt="">
+      
+    </ion-slide>
+
+    <ion-slide>
+      <h3>welcome</h3>
+      <img class= "images" src="../assets/images/logo.png" alt="">
+      
+    </ion-slide>
+
+    <ion-slide>
+      <h3>welcome</h3>
+      <img class= "images" src="../assets/images/logo.png" alt="">
+     
+    </ion-slide>
+
+    <ion-slide>
+      <h3>welcome</h3>
+      <img class= "images" src="../assets/images/logo.png" alt="">
+      
+    </ion-slide>
+
+  </ion-slides>
   <ion-text>
     <h1>Bienvenue.
     </h1>
@@ -21,14 +72,14 @@
     <div class="login-buttons">
       <ion-button>
         <ion-avatar>
-          <img src="../assets/images/f.png">
+          <img class="RSimages" src="../assets/images/f.png">
         </ion-avatar>
         <ion-label>Facebook</ion-label>
       </ion-button>
 
       <ion-button>
         <ion-avatar>
-          <img src="../assets/images/g.jpg">
+          <img class="RSimages" src="../assets/images/g.jpg">
         </ion-avatar>
         <ion-label>Google</ion-label>
       </ion-button>
@@ -44,6 +95,6 @@
       Email
     </ion-button>
   
-    <p class="login">Utilisateur existant ?<a routerLink="/login">Se connecter</a></p>
+    <p class="login" >Utilisateur existant ? <a  routerLink="/login"><i color="secondary">Se connecter</i></a></p>
   </div>
 </ion-content>

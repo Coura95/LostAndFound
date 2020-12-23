@@ -1,16 +1,21 @@
 <ion-header>
   <ion-toolbar color="primary">
+
     <ion-buttons slot="start">
-      <ion-button >
-      
+      <ion-button>
         <ion-back-button></ion-back-button>
       </ion-button>
     </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+
     <ion-buttons slot="end">
       <ion-button routerLink="/login">Log in
-        
       </ion-button>
     </ion-buttons>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -36,8 +41,8 @@
   </ion-label>
   </ion-item>
 
-    <ion-button expand="block" shape="round">
-      Nous contactez</ion-button>
+    <ion-button expand="block" shape="round" color= "secondary">
+      Inscription</ion-button>
   </form>
-  <p>En appuyant sur 'Nous joindre' vous acceptez <br /> nos termes et conditions.</p>
+  <p>En appuyant sur <a>Nous joindre</a> vous acceptez <br /> nos termes et conditions.</p>
 </ion-content>

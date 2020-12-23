@@ -1,0 +1,15 @@
+ion-content{
+    // --background:#fafafa;
+    // --background:#4ee0e6;
+    /* --background: #ddd6f3; 
+    --background: -webkit-linear-gradient(to right, #ddd6f3, #faaca8); 
+    --background: linear-gradient(to right, #ddd6f3, #faaca8);*/
+    /*--background: #2bc0e4; 
+    --background: -webkit-linear-gradient(to right, #2bc0e4, #eaecc6); 
+    --background: linear-gradient(to right, #2bc0e4, #eaecc6);*/
+   
+    --background: #ad5389;  /* fallback for old browsers */
+    --background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+   --background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+   }

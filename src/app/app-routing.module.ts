@@ -22,6 +22,30 @@ const routes: Routes = [
     path: 'annonce',
     loadChildren: () => import('./annonce/annonce.module').then( m => m.AnnoncePageModule)
   },
+  {
+    path: 'livraison',
+    loadChildren: () => import('./livraison/livraison.module').then( m => m.LivraisonPageModule)
+  },
+  {
+    path: 'annonces',
+    loadChildren: () => import('./annonces/annonces.module').then( m => m.AnnoncesPageModule)
+  },
+  {
+    path: 'annoncer',
+    loadChildren: () => import('./annoncer/annoncer.module').then( m => m.AnnoncerPageModule)
+  },
+  {
+    path: 'perdu',
+    loadChildren: () => import('./perdu/perdu.module').then( m => m.PerduPageModule)
+  },
+  {
+    path: 'trouve',
+    loadChildren: () => import('./trouve/trouve.module').then( m => m.TrouvePageModule)
+  },
+  {
+    path: 'bureau',
+    loadChildren: () => import('./bureau/bureau.module').then( m => m.BureauPageModule)
+  },
 
 ];
 

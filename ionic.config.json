@@ -1,5 +1,7 @@
 {
   "name": "Lost_Found",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

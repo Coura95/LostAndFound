@@ -17,20 +17,20 @@
 
       <ion-list lines="none" class="menu-items">
 
-        <ion-item routerLink="/home">
+        <ion-item  class="active" routerLink="/home">
           <ion-icon name="pie-chart-outline"></ion-icon>Acceuil
         </ion-item>
 
-        <ion-item>
-          <ion-icon name="browsers-outline"></ion-icon>Ajouter Annonce
+        <ion-item routerLink="/annonce">
+          <ion-icon name="browsers-outline" ></ion-icon>Ajouter Annonce
         </ion-item>
 
-        <ion-item class="active">
-          <ion-icon name="flash"></ion-icon>Liste Annonce
+        <ion-item  routerLink="/annonces">
+          <ion-icon name="flash" ></ion-icon>Liste Annonce
         </ion-item>
 
-        <ion-item>
-          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>Rechercher Annonce
+        <ion-item routerLink="/annoncer">
+          <ion-icon name="chatbubble-ellipses-outline" ></ion-icon>Rechercher Annonce
         </ion-item>
 
         <ion-item routerLink="/signup">
@@ -41,7 +41,7 @@
           <ion-icon name="exit-outline" ></ion-icon>Connexion
         </ion-item>
 
-        <ion-item>
+        <ion-item routerLink="/livraison">
           <ion-icon name="logo-twitter"></ion-icon>Livraison
         </ion-item>
 
