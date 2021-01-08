@@ -46,6 +46,10 @@ const routes: Routes = [
     path: 'bureau',
     loadChildren: () => import('./bureau/bureau.module').then( m => m.BureauPageModule)
   },
+  {
+    path: 'phototheque',
+    loadChildren: () => import('./phototheque/phototheque.module').then( m => m.PhotothequePageModule)
+  },
 
 ];
 

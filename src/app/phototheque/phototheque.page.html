@@ -1,0 +1,42 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button >
+        <ion-back-button></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Photothèque</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-button expand = "block" color="primary" (click)="addPhoto('library')">
+  <ion-icon slot ="start" name="image"></ion-icon>
+  Ouvrir la bibliotheque
+</ion-button>
+
+<ion-button expand = "block" color="primary" (click)="addPhoto('camera')">
+  <ion-icon slot ="start" name="camera"></ion-icon>
+  Prendre une photo
+</ion-button>
+
+<div class="flex">
+  <div class= "img-box">
+    <img [src]="image">
+  </div>
+</div>
+
+<ion-button expand = "block" color="warning" (click)="uploadFirebase()">
+  <ion-icon slot ="start" name="camera"></ion-icon>
+  Envoyer dans Firebase
+</ion-button>
+
+</ion-content>
+
+
+
