@@ -30,9 +30,13 @@
     <img [src]="image">
   </div>
 </div>
+<ion-button expand = "block" color="primary" (click)="addPhoto('video')">
+  <ion-icon slot ="start" name="Play"></ion-icon>
+  Play video
+</ion-button>
 
 <ion-button expand = "block" color="warning" (click)="uploadFirebase()">
-  <ion-icon slot ="start" name="camera"></ion-icon>
+  <ion-icon slot ="start" name="cloud-upload"></ion-icon>
   Envoyer dans Firebase
 </ion-button>
 
